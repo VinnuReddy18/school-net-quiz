@@ -6,9 +6,23 @@ function App() {
   const [theme, setTheme] = useState('light');
   const [category, setCategory] = useState('');
   const [quizLevel, setQuizLevel] = useState('');
+  const [showQuiz, setShowQuiz] = useState(false);
 
   const toggleTheme = () => {
     setTheme(theme === 'light' ? 'dark' : 'light');
+  };
+
+  const handleRestart = () => {
+    setShowQuiz(false);
+    setTimeout(() => {
+      setShowQuiz(true);
+    }, 0); // Reset the quiz by toggling the state
+  };
+
+  const handleGoHome = () => {
+    setCategory('');
+    setQuizLevel('');
+    setShowQuiz(false);
   };
 
   return (
@@ -32,7 +46,12 @@ function App() {
           <button onClick={() => setQuizLevel('hard')}>Hard</button>
         </div>
       ) : (
-        <Quiz category={category} level={quizLevel} />
+        <Quiz
+          category={category}
+          level={quizLevel}
+          onRestart={handleRestart}
+          onGoHome={handleGoHome}
+        />
       )}
     </div>
   );

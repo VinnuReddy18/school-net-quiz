@@ -1,117 +1,341 @@
 export const questions = {
     cars: {
       easy: [
-        { type: "mcq", question: "Which car brand has a logo with four rings?", options: ["BMW", "Audi", "Mercedes", "Tesla"], answer: "Audi" },
-        { type: "truefalse", question: "Electric cars produce zero emissions.", options: ["True", "False"], answer: "False" },
-        { type: "multi", question: "Which of the following are types of car engines?", options: ["V8", "Wankel", "Steam", "Rotary"], answer: ["V8", "Rotary"] },
-        { type: "mcq", question: "Which company produces the Model S?", options: ["Tesla", "Ford", "Toyota", "BMW"], answer: "Tesla" },
-        { type: "truefalse", question: "Bugatti Veyron is an electric car.", options: ["True", "False"], answer: "False" }
+        {
+          type: "mcq",
+          question: "Which car brand has a logo with four rings?",
+          options: ["BMW", "Audi", "Mercedes", "Tesla"],
+          answer: "Audi",
+          explanation: "The Audi logo features four rings representing the four companies that merged to form Audi."
+        },
+        {
+          type: "truefalse",
+          question: "Electric cars produce zero emissions.",
+          options: ["True", "False"],
+          answer: "False",
+          explanation: "Electric cars do not produce emissions while driving, but the production of electricity and batteries can create emissions."
+        },
+        {
+          type: "multi",
+          question: "Which of the following are types of car engines?",
+          options: ["V8", "Wankel", "Steam", "Rotary"],
+          answer: ["V8", "Rotary"],
+          explanation: "V8 and Rotary are types of car engines. Wankel is another name for Rotary engines, but Steam engines are not commonly used in modern cars."
+        },
+        {
+          type: "mcq",
+          question: "Which company produces the Model S?",
+          options: ["Tesla", "Ford", "Toyota", "BMW"],
+          answer: "Tesla",
+          explanation: "The Model S is a fully electric car produced by Tesla, Inc."
+        },
+        {
+          type: "truefalse",
+          question: "Bugatti Veyron is an electric car.",
+          options: ["True", "False"],
+          answer: "False",
+          explanation: "The Bugatti Veyron is a high-performance gasoline-powered sports car."
+        }
       ],
       medium: [
-        { type: "mcq", question: "Which car is known as the 'Godzilla'?", options: ["Nissan GTR", "Mustang", "Porsche 911", "Audi R8"], answer: "Nissan GTR" },
-        { type: "truefalse", question: "The Ferrari logo is a prancing horse.", options: ["True", "False"], answer: "True" },
-        { type: "multi", question: "Which of the following brands are Italian?", options: ["Lamborghini", "Bugatti", "Ferrari", "Porsche"], answer: ["Lamborghini", "Ferrari"] },
-        { type: "mcq", question: "Which car brand produces the Mustang?", options: ["Ford", "Chevrolet", "Dodge", "BMW"], answer: "Ford" },
-        { type: "truefalse", question: "The McLaren F1 was the fastest car in the 90s.", options: ["True", "False"], answer: "True" }
+        {
+          type: "mcq",
+          question: "Which car is known as the 'Godzilla'?",
+          options: ["Nissan GTR", "Mustang", "Porsche 911", "Audi R8"],
+          answer: "Nissan GTR",
+          explanation: "The Nissan GTR is nicknamed 'Godzilla' due to its powerful performance and Japanese origin."
+        },
+        {
+          type: "truefalse",
+          question: "The Ferrari logo is a prancing horse.",
+          options: ["True", "False"],
+          answer: "True",
+          explanation: "The Ferrari logo features a prancing horse, symbolizing power and speed."
+        },
+        {
+          type: "multi",
+          question: "Which of the following brands are Italian?",
+          options: ["Lamborghini", "Bugatti", "Ferrari", "Porsche"],
+          answer: ["Lamborghini", "Ferrari"],
+          explanation: "Lamborghini and Ferrari are Italian car manufacturers. Bugatti is French, and Porsche is German."
+        },
+        {
+          type: "mcq",
+          question: "Which car brand produces the Mustang?",
+          options: ["Ford", "Chevrolet", "Dodge", "BMW"],
+          answer: "Ford",
+          explanation: "The Ford Mustang is a classic American muscle car produced by Ford."
+        },
+        {
+          type: "truefalse",
+          question: "The McLaren F1 was the fastest car in the 90s.",
+          options: ["True", "False"],
+          answer: "True",
+          explanation: "The McLaren F1 was the fastest production car of the 1990s."
+        }
       ],
       hard: [
-        { type: "mcq", question: "Which car was known as 'The Widowmaker'?", options: ["Porsche 911 Turbo", "Corvette C7", "Ferrari Enzo", "Ford GT"], answer: "Porsche 911 Turbo" },
-        { type: "truefalse", question: "Koenigsegg Jesko is a Swedish hypercar.", options: ["True", "False"], answer: "True" },
-        { type: "multi", question: "Which of the following are hybrid supercars?", options: ["Porsche 918", "Ferrari LaFerrari", "Bugatti Chiron", "McLaren P1"], answer: ["Porsche 918", "Ferrari LaFerrari", "McLaren P1"] },
-        { type: "mcq", question: "Which car holds the Nürburgring lap record?", options: ["Porsche 911 GT2 RS", "Lamborghini Huracan", "Ferrari 488 Pista", "McLaren 720S"], answer: "Porsche 911 GT2 RS" },
-        { type: "truefalse", question: "The Lamborghini Countach was introduced in the 80s.", options: ["True", "False"], answer: "False" }
+        {
+          type: "mcq",
+          question: "Which car was known as 'The Widowmaker'?",
+          options: ["Porsche 911 Turbo", "Corvette C7", "Ferrari Enzo", "Ford GT"],
+          answer: "Porsche 911 Turbo",
+          explanation: "The Porsche 911 Turbo, especially the older models, earned the nickname 'The Widowmaker' due to its powerful performance and challenging handling characteristics."
+        },
+        {
+          type: "truefalse",
+          question: "Koenigsegg Jesko is a Swedish hypercar.",
+          options: ["True", "False"],
+          answer: "True",
+          explanation: "The Koenigsegg Jesko is a Swedish hypercar known for its extreme performance and advanced technology."
+        },
+        {
+          type: "multi",
+          question: "Which of the following are hybrid supercars?",
+          options: ["Porsche 918", "Ferrari LaFerrari", "Bugatti Chiron", "McLaren P1"],
+          answer: ["Porsche 918", "Ferrari LaFerrari", "McLaren P1"],
+          explanation: "The Porsche 918, Ferrari LaFerrari, and McLaren P1 are hybrid supercars, while the Bugatti Chiron is a purely gasoline-powered supercar."
+        },
+        {
+          type: "mcq",
+          question: "Which car holds the Nürburgring lap record?",
+          options: ["Porsche 911 GT2 RS", "Lamborghini Huracan", "Ferrari 488 Pista", "McLaren 720S"],
+          answer: "Porsche 911 GT2 RS",
+          explanation: "As of the latest updates, the Porsche 911 GT2 RS holds the Nürburgring lap record for production cars."
+        },
+        {
+          type: "truefalse",
+          question: "The Tesla Roadster was the first electric car to go to space.",
+          options: ["True", "False"],
+          answer: "True",
+          explanation: "The Tesla Roadster was launched into space by SpaceX, marking it as the first electric car in space."
+        }
       ]
     },
     tech: {
       easy: [
-        { type: "mcq", question: "What does 'HTML' stand for?", options: ["Hypertext Markup Language", "Hyperlink and Text Markup Language", "High-level Text Markup Language", "Hypertext and Markup Language"], answer: "Hypertext Markup Language" },
-        { type: "truefalse", question: "CSS is used for styling HTML elements.", options: ["True", "False"], answer: "True" },
-        { type: "multi", question: "Which of the following are programming languages?", options: ["JavaScript", "HTML", "Python", "CSS"], answer: ["JavaScript", "Python"] },
-        { type: "mcq", question: "Which company developed the Windows operating system?", options: ["Apple", "Microsoft", "Google", "IBM"], answer: "Microsoft" },
-        { type: "truefalse", question: "JavaScript is a server-side language.", options: ["True", "False"], answer: "False" }
+        {
+          type: "mcq",
+          question: "Which company developed the Windows operating system?",
+          options: ["Apple", "Google", "Microsoft", "IBM"],
+          answer: "Microsoft",
+          explanation: "Microsoft developed the Windows operating system, which is widely used on personal computers."
+        },
+        {
+          type: "truefalse",
+          question: "HTML stands for Hypertext Markup Language.",
+          options: ["True", "False"],
+          answer: "True",
+          explanation: "HTML stands for Hypertext Markup Language, used for creating and structuring web pages."
+        },
+        {
+          type: "multi",
+          question: "Which of the following are programming languages?",
+          options: ["JavaScript", "CSS", "HTML", "Python"],
+          answer: ["JavaScript", "Python"],
+          explanation: "JavaScript and Python are programming languages. CSS and HTML are markup languages used for styling and structuring web pages."
+        },
+        {
+          type: "mcq",
+          question: "Which company is known for its iPhone?",
+          options: ["Apple", "Samsung", "Sony", "Nokia"],
+          answer: "Apple",
+          explanation: "Apple is known for developing the iPhone, a popular smartphone."
+        },
+        {
+          type: "truefalse",
+          question: "The internet and the World Wide Web are the same thing.",
+          options: ["True", "False"],
+          answer: "False",
+          explanation: "The internet is a global network of interconnected computers, while the World Wide Web is a system of interlinked hypertext documents accessed via the internet."
+        }
       ],
       medium: [
-        { type: "mcq", question: "What is the latest version of HTML?", options: ["HTML4", "HTML5", "HTML6", "HTML7"], answer: "HTML5" },
-        { type: "truefalse", question: "Python is an interpreted language.", options: ["True", "False"], answer: "True" },
-        { type: "multi", question: "Which of the following are frameworks for JavaScript?", options: ["React", "Django", "Angular", "Spring"], answer: ["React", "Angular"] },
-        { type: "mcq", question: "What does 'SQL' stand for?", options: ["Structured Query Language", "Sequential Query Language", "Standard Query Language", "Structured Question Language"], answer: "Structured Query Language" },
-        { type: "truefalse", question: "PHP stands for Personal Home Page.", options: ["True", "False"], answer: "False" }
+        {
+          type: "mcq",
+          question: "Which language is primarily used for styling web pages?",
+          options: ["HTML", "JavaScript", "CSS", "Python"],
+          answer: "CSS",
+          explanation: "CSS (Cascading Style Sheets) is used to style and layout web pages."
+        },
+        {
+          type: "truefalse",
+          question: "The Python programming language was named after a snake.",
+          options: ["True", "False"],
+          answer: "False",
+          explanation: "Python was named after the British comedy series 'Monty Python’s Flying Circus,' not the snake."
+        },
+        {
+          type: "multi",
+          question: "Which of the following are web browsers?",
+          options: ["Chrome", "Firefox", "Excel", "Word"],
+          answer: ["Chrome", "Firefox"],
+          explanation: "Chrome and Firefox are web browsers. Excel and Word are applications for spreadsheets and word processing, respectively."
+        },
+        {
+          type: "mcq",
+          question: "Which protocol is commonly used for secure web transactions?",
+          options: ["HTTP", "HTTPS", "FTP", "SMTP"],
+          answer: "HTTPS",
+          explanation: "HTTPS (Hypertext Transfer Protocol Secure) is used for secure web transactions, ensuring encrypted communication between the user and the website."
+        },
+        {
+          type: "truefalse",
+          question: "Java and JavaScript are the same programming language.",
+          options: ["True", "False"],
+          answer: "False",
+          explanation: "Java and JavaScript are different programming languages. Java is a general-purpose programming language, while JavaScript is primarily used for web development."
+        }
       ],
       hard: [
-        { type: "mcq", question: "What is the purpose of the 'this' keyword in JavaScript?", options: ["Refers to the global object", "Refers to the object that called the function", "Refers to the function itself", "Refers to the constructor function"], answer: "Refers to the object that called the function" },
-        { type: "truefalse", question: "In which language was the Linux kernel primarily written?", options: ["C", "C++", "Assembly", "Python"], answer: "C" },
-        { type: "multi", question: "Which of the following are types of NoSQL databases?", options: ["MongoDB", "PostgreSQL", "MySQL", "Redis"], answer: ["MongoDB", "Redis"] },
-        { type: "mcq", question: "Which protocol is used for secure data transfer over the web?", options: ["HTTP", "FTP", "SMTP", "HTTPS"], answer: "HTTPS" },
-        { type: "truefalse", question: "The 'fetch' API is used for making HTTP requests.", options: ["True", "False"], answer: "True" }
+        {
+          type: "mcq",
+          question: "Which company developed the first computer mouse?",
+          options: ["IBM", "Apple", "Xerox", "Microsoft"],
+          answer: "Xerox",
+          explanation: "Xerox developed the first computer mouse as part of the development of the Xerox Alto computer."
+        },
+        {
+          type: "truefalse",
+          question: "Blockchain technology is primarily used for cryptocurrency.",
+          options: ["True", "False"],
+          answer: "True",
+          explanation: "Blockchain technology is the foundational technology behind cryptocurrencies, enabling secure and transparent transactions."
+        },
+        {
+          type: "multi",
+          question: "Which of the following are types of machine learning?",
+          options: ["Supervised", "Unsupervised", "Reinforcement", "Reactive"],
+          answer: ["Supervised", "Unsupervised", "Reinforcement"],
+          explanation: "Supervised, Unsupervised, and Reinforcement are types of machine learning. Reactive is not a type of machine learning."
+        },
+        {
+          type: "mcq",
+          question: "Which programming paradigm focuses on using functions to perform computations?",
+          options: ["Object-Oriented", "Functional", "Procedural", "Declarative"],
+          answer: "Functional",
+          explanation: "Functional programming focuses on using functions to perform computations, emphasizing immutability and first-class functions."
+        },
+        {
+          type: "truefalse",
+          question: "The Linux operating system is proprietary software.",
+          options: ["True", "False"],
+          answer: "False",
+          explanation: "Linux is open-source software, meaning its source code is freely available for modification and distribution."
+        }
       ]
     },
     science: {
       easy: [
-        { type: "mcq", question: "What is the chemical symbol for water?", options: ["H2O", "O2", "CO2", "NaCl"], answer: "H2O" },
-        { type: "truefalse", question: "The Earth orbits the Sun.", options: ["True", "False"], answer: "True" },
-        { type: "multi", question: "Which of the following are states of matter?", options: ["Solid", "Liquid", "Gas", "Plasma"], answer: ["Solid", "Liquid", "Gas"] },
-        { type: "mcq", question: "What is the largest planet in our solar system?", options: ["Earth", "Jupiter", "Saturn", "Neptune"], answer: "Jupiter" },
-        { type: "truefalse", question: "Humans have 206 bones in their body.", options: ["True", "False"], answer: "True" }
+        {
+          type: "mcq",
+          question: "What is the chemical symbol for water?",
+          options: ["H2O", "O2", "CO2", "H2SO4"],
+          answer: "H2O",
+          explanation: "The chemical symbol for water is H2O, indicating two hydrogen atoms and one oxygen atom."
+        },
+        {
+          type: "truefalse",
+          question: "The Earth is the third planet from the Sun.",
+          options: ["True", "False"],
+          answer: "True",
+          explanation: "The Earth is the third planet from the Sun in our solar system."
+        },
+        {
+          type: "multi",
+          question: "Which of the following are planets in our solar system?",
+          options: ["Mars", "Venus", "Pluto", "Sun"],
+          answer: ["Mars", "Venus", "Pluto"],
+          explanation: "Mars, Venus, and Pluto are planets (or dwarf planets) in our solar system. The Sun is a star."
+        },
+        {
+          type: "mcq",
+          question: "What is the largest planet in our solar system?",
+          options: ["Earth", "Jupiter", "Saturn", "Uranus"],
+          answer: "Jupiter",
+          explanation: "Jupiter is the largest planet in our solar system."
+        },
+        {
+          type: "truefalse",
+          question: "The human body has 206 bones.",
+          options: ["True", "False"],
+          answer: "True",
+          explanation: "The adult human body typically has 206 bones."
+        }
       ],
       medium: [
-        { type: "mcq", question: "Which planet is known as the Red Planet?", options: ["Earth", "Mars", "Jupiter", "Saturn"], answer: "Mars" },
-        { type: "truefalse", question: "Light travels faster than sound.", options: ["True", "False"], answer: "True" },
-        { type: "multi", question: "Which of the following elements are noble gases?", options: ["Neon", "Argon", "Krypton", "Bromine"], answer: ["Neon", "Argon", "Krypton"] },
-        { type: "mcq", question: "What is the basic unit of life?", options: ["Atom", "Molecule", "Cell", "Tissue"], answer: "Cell" },
-        { type: "truefalse", question: "The human brain is the largest organ in the body.", options: ["True", "False"], answer: "False" }
+        {
+          type: "mcq",
+          question: "What is the powerhouse of the cell?",
+          options: ["Nucleus", "Mitochondria", "Ribosome", "Endoplasmic Reticulum"],
+          answer: "Mitochondria",
+          explanation: "The mitochondria are known as the powerhouse of the cell because they produce energy through cellular respiration."
+        },
+        {
+          type: "truefalse",
+          question: "Humans have more than five senses.",
+          options: ["True", "False"],
+          answer: "True",
+          explanation: "In addition to the traditional five senses (sight, hearing, touch, taste, smell), humans have additional senses such as balance and temperature."
+        },
+        {
+          type: "multi",
+          question: "Which of the following are types of energy?",
+          options: ["Kinetic", "Thermal", "Magnetic", "Sound"],
+          answer: ["Kinetic", "Thermal", "Sound"],
+          explanation: "Kinetic, thermal, and sound are types of energy. Magnetic is a force rather than a type of energy."
+        },
+        {
+          type: "mcq",
+          question: "What is the chemical symbol for gold?",
+          options: ["Ag", "Au", "Pb", "Fe"],
+          answer: "Au",
+          explanation: "The chemical symbol for gold is Au, derived from the Latin word 'aurum.'"
+        },
+        {
+          type: "truefalse",
+          question: "Water boils at 100 degrees Celsius at standard atmospheric pressure.",
+          options: ["True", "False"],
+          answer: "True",
+          explanation: "Water boils at 100 degrees Celsius (212 degrees Fahrenheit) at standard atmospheric pressure (1 atmosphere)."
+        }
       ],
       hard: [
-        { type: "mcq", question: "What is the name of the process by which plants make their food?", options: ["Respiration", "Photosynthesis", "Digestion", "Absorption"], answer: "Photosynthesis" },
-        { type: "truefalse", question: "The speed of light is approximately 300,000 kilometers per second.", options: ["True", "False"], answer: "True" },
-        { type: "multi", question: "Which of the following are fundamental forces of nature?", options: ["Gravitational", "Electromagnetic", "Strong", "Weak", "Nuclear"], answer: ["Gravitational", "Electromagnetic", "Strong", "Weak"] },
-        { type: "mcq", question: "Who is known as the father of modern physics?", options: ["Isaac Newton", "Albert Einstein", "Galileo Galilei", "Niels Bohr"], answer: "Albert Einstein" },
-        { type: "truefalse", question: "The Earth is closer to the Sun than Venus.", options: ["True", "False"], answer: "False" }
-      ]
-    },
-    history: {
-      easy: [
-        { type: "mcq", question: "Who was the first President of the United States?", options: ["George Washington", "Thomas Jefferson", "Abraham Lincoln", "John Adams"], answer: "George Washington" },
-        { type: "truefalse", question: "The Great Wall of China was built to protect against invaders.", options: ["True", "False"], answer: "True" },
-        { type: "multi", question: "Which of the following were ancient civilizations?", options: ["Egyptians", "Greeks", "Romans", "Mongols"], answer: ["Egyptians", "Greeks", "Romans"] },
-        { type: "mcq", question: "Who was the famous queen of ancient Egypt?", options: ["Cleopatra", "Nefertiti", "Hatshepsut", "Elizabeth"], answer: "Cleopatra" },
-        { type: "truefalse", question: "The Titanic sank on its maiden voyage.", options: ["True", "False"], answer: "True" }
-      ],
-      medium: [
-        { type: "mcq", question: "Which event started World War I?", options: ["Assassination of Archduke Franz Ferdinand", "Attack on Pearl Harbor", "Fall of Berlin Wall", "Invasion of Poland"], answer: "Assassination of Archduke Franz Ferdinand" },
-        { type: "truefalse", question: "The Berlin Wall fell in 1989.", options: ["True", "False"], answer: "True" },
-        { type: "multi", question: "Which of the following were major World War II powers?", options: ["USA", "Germany", "Japan", "Italy", "Spain"], answer: ["USA", "Germany", "Japan", "Italy"] },
-        { type: "mcq", question: "Who was the leader of the Soviet Union during World War II?", options: ["Joseph Stalin", "Leon Trotsky", "Vladimir Lenin", "Nikita Khrushchev"], answer: "Joseph Stalin" },
-        { type: "truefalse", question: "The Roman Empire lasted over a thousand years.", options: ["True", "False"], answer: "True" }
-      ],
-      hard: [
-        { type: "mcq", question: "Which battle was a turning point in the American Civil War?", options: ["Battle of Gettysburg", "Battle of Antietam", "Battle of Fort Sumter", "Battle of Appomattox"], answer: "Battle of Gettysburg" },
-        { type: "truefalse", question: "The Magna Carta was signed in 1215.", options: ["True", "False"], answer: "True" },
-        { type: "multi", question: "Which of the following were part of the Axis Powers during World War II?", options: ["Germany", "Italy", "Japan", "France", "USA"], answer: ["Germany", "Italy", "Japan"] },
-        { type: "mcq", question: "Who was the first emperor of China?", options: ["Qin Shi Huang", "Han Wudi", "Liu Bang", "Zhu Yuanzhang"], answer: "Qin Shi Huang" },
-        { type: "truefalse", question: "The French Revolution began in 1789.", options: ["True", "False"], answer: "True" }
-      ]
-    },
-    sports: {
-      easy: [
-        { type: "mcq", question: "Which sport is known as 'the beautiful game'?", options: ["Football", "Basketball", "Tennis", "Baseball"], answer: "Football" },
-        { type: "truefalse", question: "The Olympics are held every four years.", options: ["True", "False"], answer: "True" },
-        { type: "multi", question: "Which of the following are Olympic sports?", options: ["Swimming", "Table Tennis", "Cricket", "Golf"], answer: ["Swimming", "Table Tennis", "Golf"] },
-        { type: "mcq", question: "Which country won the FIFA World Cup in 2018?", options: ["France", "Croatia", "Germany", "Brazil"], answer: "France" },
-        { type: "truefalse", question: "The NBA is a professional basketball league in Europe.", options: ["True", "False"], answer: "False" }
-      ],
-      medium: [
-        { type: "mcq", question: "Which tennis player has the most Grand Slam titles?", options: ["Roger Federer", "Rafael Nadal", "Novak Djokovic", "Serena Williams"], answer: "Serena Williams" },
-        { type: "truefalse", question: "In cricket, a 'hat-trick' is when a bowler takes three wickets in three consecutive balls.", options: ["True", "False"], answer: "True" },
-        { type: "multi", question: "Which of the following sports are played with a ball?", options: ["Football", "Volleyball", "Golf", "Archery"], answer: ["Football", "Volleyball", "Golf"] },
-        { type: "mcq", question: "What is the length of a standard soccer pitch?", options: ["90-120 meters", "60-80 meters", "50-70 meters", "120-150 meters"], answer: "90-120 meters" },
-        { type: "truefalse", question: "A touchdown is worth 7 points in American football.", options: ["True", "False"], answer: "False" }
-      ],
-      hard: [
-        { type: "mcq", question: "Which swimmer holds the record for the most Olympic gold medals?", options: ["Michael Phelps", "Ian Thorpe", "Ryan Lochte", "Mark Spitz"], answer: "Michael Phelps" },
-        { type: "truefalse", question: "The Tour de France is a cycling race.", options: ["True", "False"], answer: "True" },
-        { type: "multi", question: "Which of the following are considered major golf tournaments?", options: ["The Masters", "U.S. Open", "The Open Championship", "Ryder Cup"], answer: ["The Masters", "U.S. Open", "The Open Championship"] },
-        { type: "mcq", question: "Which team has won the most NBA championships?", options: ["Los Angeles Lakers", "Boston Celtics", "Chicago Bulls", "Golden State Warriors"], answer: "Boston Celtics" },
-        { type: "truefalse", question: "The Super Bowl is the championship game of the NFL.", options: ["True", "False"], answer: "True" }
+        {
+          type: "mcq",
+          question: "What is the most abundant gas in the Earth's atmosphere?",
+          options: ["Oxygen", "Carbon Dioxide", "Nitrogen", "Argon"],
+          answer: "Nitrogen",
+          explanation: "Nitrogen is the most abundant gas in the Earth's atmosphere, making up about 78% of the air."
+        },
+        {
+          type: "truefalse",
+          question: "Einstein's theory of relativity includes both special and general relativity.",
+          options: ["True", "False"],
+          answer: "True",
+          explanation: "Einstein's theory of relativity consists of both special relativity (dealing with objects moving at constant speeds) and general relativity (dealing with gravity and acceleration)."
+        },
+        {
+          type: "multi",
+          question: "Which of the following are types of electromagnetic radiation?",
+          options: ["Gamma Rays", "X-rays", "Microwaves", "Sound Waves"],
+          answer: ["Gamma Rays", "X-rays", "Microwaves"],
+          explanation: "Gamma rays, X-rays, and microwaves are types of electromagnetic radiation. Sound waves are a different type of wave."
+        },
+        {
+          type: "mcq",
+          question: "What is the atomic number of carbon?",
+          options: ["6", "12", "8", "14"],
+          answer: "6",
+          explanation: "The atomic number of carbon is 6, which defines its position in the periodic table."
+        },
+        {
+          type: "truefalse",
+          question: "DNA stands for Deoxyribonucleic Acid.",
+          options: ["True", "False"],
+          answer: "True",
+          explanation: "DNA stands for Deoxyribonucleic Acid, which carries genetic information in living organisms."
+        }
       ]
     }
   };
