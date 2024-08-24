@@ -1,0 +1,169 @@
+/* App.css */
+
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #e0eafc, #cfdef3);
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.app {
+  text-align: center;
+  padding: 50px;
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  transition: background 0.5s ease, box-shadow 0.5s ease;
+  max-width: 80%;
+  position: relative; /* Required for pseudo-elements */
+}
+
+.app.dark {
+  background: #2c3e50;
+  color: #ecf0f1;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 40px;
+  letter-spacing: 1.5px;
+  color: #2980b9;
+  transition: color 0.3s ease;
+}
+
+.app.dark h1 {
+  color: #ecf0f1;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.theme-toggle {
+  background: none;
+  border: 2px solid currentColor;
+  color: inherit;
+  padding: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.theme-toggle:hover {
+  background: #2980b9;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+/* Category Selection Styles */
+.category-selection {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.category-selection button {
+  background: #2980b9;
+  color: #fff;
+  border: none;
+  padding: 20px 40px;
+  border-radius: 12px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: 30%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-selection button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.category-selection button:focus {
+  outline: none;
+  box-shadow: 0px 0px 0px 4px #3498db;
+}
+
+/* Level Selection Styles */
+.level-selection {
+  display: flex;
+  justify-content: space-around;
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.level-selection button {
+  background: #2980b9;
+  color: #fff;
+  border: none;
+  padding: 20px 40px;
+  border-radius: 12px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: 30%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.level-selection button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.level-selection button:focus {
+  outline: none;
+  box-shadow: 0px 0px 0px 4px #3498db;
+}
+
+/* Additional Design Elements */
+.app::before {
+  content: '';
+  position: absolute;
+  top: -150px;
+  right: -150px;
+  width: 300px;
+  height: 300px;
+  background: rgba(41, 128, 185, 0.2);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.app::after {
+  content: '';
+  position: absolute;
+  bottom: -150px;
+  left: -150px;
+  width: 300px;
+  height: 300px;
+  background: rgba(41, 128, 185, 0.2);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.app {
+  animation: fadeIn 0.7s ease-in-out;
+}
